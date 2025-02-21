@@ -1,13 +1,12 @@
 pipeline {
     agent any
-   
+
     stages {
-        stage('Get Code') {
+        stage('Deploy to Production') {
             steps {
-                echo 'Obteniendo código de la rama master'
-             
+                echo 'Deploying to production...'
+                // Aquí van los pasos reales de despliegue a producción
             }
         }
-       
     }
 }
