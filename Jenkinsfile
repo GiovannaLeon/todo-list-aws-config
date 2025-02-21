@@ -1,13 +1,20 @@
 pipeline {
     agent any
-   
+
     stages {
-        stage('Get Code') {
+        stage('Build') {
             steps {
-                echo 'Obteniendo código de la rama master'
-             
+                echo 'Building the project...'
+                // Aquí van los pasos de construcción, pruebas, etc.
             }
         }
-       
+        
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Aquí van los pasos para ejecutar las pruebas
+            }
+        }
     }
 }
+
